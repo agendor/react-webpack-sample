@@ -1,0 +1,31 @@
+{
+  "name": "azk-nginx-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agendor/azk-nginx-example.git"
+  },
+  "keywords": [
+    "azk",
+    "nginx",
+    "react",
+    "webpack",
+    "docker"
+  ],
+  "author": "Tulio Monte Azul <tuliomonteazul@gmail.com> (http://www.agendor.com.br/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agendor/azk-nginx-example/issues"
+  },
+  "homepage": "https://github.com/agendor/azk-nginx-example#readme",
+  "dependencies": {
+    "jsx-loader": "^0.13.2",
+    "react": "^0.13.3",
+    "webpack": "^1.12.2"
+  }
+}
