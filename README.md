@@ -15,8 +15,12 @@ The main goal of this project is to setup a working development environment that
 ## Setup
 
 1. Install Azk: http://docs.azk.io/en/installation/
-2. Clone this project: https://github.com/agendor/react-webpack-sample/tree/azk
-(use `azk` branch because the `master` branch is not completed as it's used by [this blog post tutorial](http://bits.agendor.com.br/2015/10/25/configurando-ambiente-para-front-end-com-azk/))
+2. Clone this project: 
+
+```
+$ git clone https://github.com/agendor/react-webpack-sample/tree/azk
+```
+(Be sure that you clone `azk` branch. The `master` branch is not completed because it's used by [this blog post tutorial](http://bits.agendor.com.br/2015/10/25/configurando-ambiente-para-front-end-com-azk/))
 
 ## Start 
 
