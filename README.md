@@ -16,6 +16,7 @@ The main goal of this project is to setup a working development environment that
 
 1. Install Azk: http://docs.azk.io/en/installation/
 2. Clone this project: https://github.com/agendor/react-webpack-sample/tree/azk
+(use `azk` branch because the `master` branch is not completed as it's used by [this blog post tutorial](http://bits.agendor.com.br/2015/10/25/configurando-ambiente-para-front-end-com-azk/))
 
 ## Start 
 
@@ -48,5 +49,3 @@ curl http://app-cdn.dev.azk.io
 # request an asset
 curl http://app-cdn.dev.azk.io/assets/app.js
 ```
-
-https://github.com/agendor/react-webpack-sample/tree/azk
