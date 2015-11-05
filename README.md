@@ -1,6 +1,9 @@
 # azk-nginx-example
 An application example to show how to use Azk, Nginx, React and Webpack
 
+Already have azk installed a want to run this project with one click?  
+[![Run project](https://s3-sa-east-1.amazonaws.com/assets.azk.io/run-project.png)](run.azk.io/start/?repo=agendor/react-webpack-sample&ref=azk)
+
 ## About
 
 This is a project has the basic setup for these technologies:
