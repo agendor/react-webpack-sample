@@ -1,7 +1,22 @@
 /**
  * Documentation: http://docs.azk.io/Azkfile.js
  */
-systems({  
+systems({
+  'app-cdn': {
+    depends: [],
+    image: {"dockerfile": "./docker/app-cdn/Dockerfile"},
+    shell: "/bin/bash",
+    mounts: {
+      '/azk/#{system.name}': sync("./public"),
+      '/azk/#{system.name}/build': persistent("./public/build")
+    },
+    http: {
+      domains: [ "#{system.name}.#{azk.default_domain}" ]
+    },
+    ports: {
+      http: "8008/tcp"
+    }
+  },
   'app-builder': {
     // Dependent systems
     depends: [],
@@ -27,19 +42,10 @@ systems({
       NODE_ENV: "dev"
     },
   },
-  'app-cdn': {
-    depends: [],
-    image: {"dockerfile": "./docker/app-cdn/Dockerfile"},
-    shell: "/bin/bash",
-    mounts: {
-      '/azk/#{system.name}': sync("./public"),
-      '/azk/#{system.name}/build': persistent("./public/build")
-    },
-    http: {
-      domains: [ "#{system.name}.#{azk.default_domain}" ]
-    },
-    ports: {
-      http: "8008/tcp"
-    }
-  }
 });
+
+/*
+  Set default system
+  `azk start` == `azk start app-cdn`
+*/
+setDefault('app-cdn');
